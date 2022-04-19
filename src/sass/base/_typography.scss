@@ -1,0 +1,141 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  // position: relative;
+}
+
+h4 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+// Headers
+.heading-primary {
+  cursor: default;
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // border: 1px solid green;
+
+  &--main {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 1.5rem;
+    margin-bottom: 5rem;
+    animation: scaleIn 2s;
+    backface-visibility: hidden;
+  }
+
+  &--sub {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1.1rem;
+    animation: moveFromBottom 1.5s forwards;
+    animation-delay: 2s;
+    text-transform: lowercase;
+    opacity: 0;
+  }
+}
+
+// Logo
+.logo {
+  font-weight: 600;
+  color: $color-grey-very-dark;
+  transition: all 0.4s ease;
+
+  &--nine {
+    color: $color-primary;
+    font-size: 5rem;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    top: 0.9rem;
+    transition: all 0.4s ease;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: default;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  transition: all 0.2s ease;
+
+  @include respond(phone) {
+    font-size: 3.5rem !important;
+  }
+
+  &--white {
+    font-size: 3.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: auto;
+    cursor: default;
+    color: #fff;
+    padding: 1rem 4rem;
+    letter-spacing: 2.2px;
+    border-radius: 0.2rem;
+    background-color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+.heading-tertiary {
+  cursor: default;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  @include respond(tab-land) {
+    font-size: 2.3rem;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+// FAQ SECTION
+.faq-heading--sub {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+
+  @include respond(phone) {
+    letter-spacing: 0.5rem;
+  }
+}

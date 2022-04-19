@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  // max-width: 100%;
+  // height: 8rem;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  // background-color: #000;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+
+    // border: 1px solid red;
+
+    &__left {
+
+      ul {
+        display: flex;
+        li {
+          padding: 0 1.5rem;
+          letter-spacing: .12rem;
+          font-weight: 500;
+          // color: #fff;
+        }
+      }
+
+    }
+
+    &__right {
+
+      ul {
+        display: flex;
+
+        li {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+
+}
